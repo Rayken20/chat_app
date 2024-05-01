@@ -1,0 +1,34 @@
+Problem
+ A mobile app has an issue with the contacts list screen: it lacks notification indicators for unread messages. 
+The goal is to devise an algorithm that addresses this issue
+by ordering the list so that contacts with unread messages from the logged-in user appear first.
+
+Inputs
+- Array of users-
+    user id, 
+    Target_id
+
+OUtputs
+- A sorted list that represents users, tagged as read or unread depending 
+   on the presence of unread messages.
+-Unread messages appear first
+
+Constraits
+- Every user can have o or more messages (>=0)
+- The algorithm should have a time complexity of O(n) (linear) or O(log n) ().
+
+Requirements
+- The algorithm should correctly identify unread messages for the logged-in user.
+- The output should be sorted with users having unread messages appearing first.
+- The implementation should meet the specified time complexity requirements.
+
+
+THE APPROACH
+1. Define a function. The function should take in an array of users and the target user ID as input parameters.
+2. Iterate through the array of users and filter out only the users relevant to the target user ID.
+3. For each relevant user, iterate through their messages to identify unread messages.
+4. Make a tag. Tag every user with "unread" or "read" based on their category.
+5. Sort the tagged users to ensure that the ones with unread messages appear first on the list
+6. Return sorted arrays
+7. abstraction and decomposition to ensure that the app displays all the users, except the logged_in user
+
